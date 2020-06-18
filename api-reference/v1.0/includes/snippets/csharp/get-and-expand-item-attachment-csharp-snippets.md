@@ -8,7 +8,7 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var attachment = await graphClient.Me.Messages["AAMkADA1M-zAAA="].Attachments["AAMkADA1M-CJKtzmnlcqVgqI="]
 	.Request()
-	.Expand("itemattachment/item")
+	.Expand("microsoft.graph.itemattachment/item")
 	.GetAsync();
 
 ```
